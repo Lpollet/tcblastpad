@@ -1,6 +1,6 @@
-if SHIELD_BLASTPAD
+if SHIELD_TCBLASTPAD
 
 config ZMK_KEYBOARD_NAME
-    Default "BlastPad"
+    Default "tcblastpad"
 
 endif

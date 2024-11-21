@@ -1,0 +1,28 @@
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer { // Layer 0
+            // -------------------------------------
+            // |     Z     |     M     |     K     |
+            // |     A     |     B     |     C     |
+            // |     D     |     E     |     F     |
+            bindings = <
+                &kp Z    &kp M    &kp K     &mo 1   &kp k
+                &kp A    &kp B    &kp C     &kp K   &kp K
+                &kp D    &kp E    &kp F     &kp K   &kp K
+                &kp Z    &kp M    &kp K     &kp K   &kp K
+                &kp Z    &kp M    &kp K     &kp K   &kp K
+                &kp Z    &kp M    &kp K     &kp K   &kp K
+            >;
+        };
+
+        bt_layer {
+                bindings = <
+                    &none       &none       &bootloader
+                    &none       &none       &bt BT_CLR
+                    &bt BT_SEL 0  &bt BT_SEL 1      &bt BT_SEL 2
+                >;
+        }
+    };
+ };
